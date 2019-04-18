@@ -21,15 +21,4 @@ public class WebHandlerTest {
         assertTrue(result.startsWith("The following are the graphical"));
     }
 
-    @Test(expected = NullPointerException.class)
-    public void testGetContentBadUrl() {
-        // Setup
-        final String url = "https://www.w3.org/TR/PNG/iso_8859-xt";
-
-        // Run the test
-        final String result = WebHandler.getContent(url);
-
-        // Verify the results
-        assertTrue(result.startsWith("The following are the graphical"));
-    }
 }
